@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react"
+import { Briefcase, ChartNoAxesCombined, Code, Gamepad2 } from "lucide-react"
 
 export const About = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -10,20 +10,17 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                     <h3 className="text-2xl font-semibold">
-                        Aspiring Web Developer
+                        Aspiring Developer
                     </h3>
 
+                    {/* Write Text: experience */}
                     <p className="text-muted-foreground">
-                        Write Text: experience # 
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                        sed diam voluptua.
+                        
                     </p>
 
+                    {/* Write Text: specialization */}
                     <p className="text-muted-foreground">
-                        Write Text: specialization #
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                        
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -52,12 +49,12 @@ export const About = () => {
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <User className="h-6 w-6 text-primary"/>
+                                <Gamepad2 className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                                <h4 className="font-semibold text-lg">Game Engines</h4>
                                 <p className="text-muted-foreground">
-                                    Desgin intuitiv user interfaces and seamless user experiences.
+                                    Developing interactive games and simulations with modern game engines like Unity.
                                 </p>
                             </div>
                         </div>
@@ -66,12 +63,12 @@ export const About = () => {
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Briefcase className="h-6 w-6 text-primary"/>
+                                <ChartNoAxesCombined className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Project Management</h4>
+                                <h4 className="font-semibold text-lg">Agile Methodologies</h4>
                                 <p className="text-muted-foreground">
-                                    Leading projects from conception to completion with agile methodologies.
+                                    Applying agile methodologies like Scrum in team-based software projects during my studies.
                                 </p>
                             </div>
                         </div>
