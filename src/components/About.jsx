@@ -14,14 +14,10 @@ export const About = () => {
                     </h3>
 
                     {/* Write Text: experience */}
-                    <p className="text-muted-foreground">
-                        
-                    </p>
+                    <p></p>
 
                     {/* Write Text: specialization */}
-                    <p className="text-muted-foreground">
-                        
-                    </p>
+                    <p></p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">Get In Touch</a>
@@ -39,7 +35,7 @@ export const About = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Web Development</h4>
-                                <p className="text-muted-foreground">
+                                <p>
                                     Creating responsiv websites and web applications with modern frameworks.
                                 </p>
                             </div>
@@ -53,7 +49,7 @@ export const About = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Game Engines</h4>
-                                <p className="text-muted-foreground">
+                                <p>
                                     Developing interactive games and simulations with modern game engines like Unity.
                                 </p>
                             </div>
@@ -67,7 +63,7 @@ export const About = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Agile Methodologies</h4>
-                                <p className="text-muted-foreground">
+                                <p>
                                     Applying agile methodologies like Scrum in team-based software projects during my studies.
                                 </p>
                             </div>
