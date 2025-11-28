@@ -6,7 +6,7 @@ const projects = [
         title: "ScreenStack",
         description: "A beautiful Watchlist landing page app using React and Tailwind.",
         image: "/projects/cat.png",
-        tags: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+        tags: ["React", "Tailwind CSS", "Node.js"],
         demoUrl: "#",
         githubUrl: "#",
     },
