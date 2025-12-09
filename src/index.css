@@ -19,6 +19,9 @@
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
 
+  --animate-cloud-drift: cloud-drift linear infinite;
+  --animate-pulse-slow: pulse-slow 8s ease-in-out infinite;
+
   @keyframes float {
     0%,
     100% {
@@ -58,6 +61,27 @@
     100% {
       transform: rotate(215deg) translateX(-500px);
       opacity: 0;
+    }
+  }
+  @keyframes cloud-drift {
+    0% {
+      /* Startet bei -100% seiner eigenen Breite (links draußen) */
+      transform: translateX(0) scale(var(--tw-scale-x, 1));
+    }
+    100% {
+      /* Fährt bis 120vw (komplett rechts raus + Puffer) */
+      transform: translateX(120vw) scale(var(--tw-scale-x, 1));
+    }
+  }
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: scale(1.05);
     }
   }
 }
@@ -152,6 +176,15 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+@utility cloud-puff {
+  @apply absolute rounded-full;
+  /* Ein leichter Verlauf von Weiß zu fast-Weiß für 3D Effekt */
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f9ff 100%);
+  /* Weicher Schatten für Tiefe, damit sie sich vom Hintergrund abheben */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05),
+    inset 0 2px 5px rgba(255, 255, 255, 0.8);
 }
 
 #root {
